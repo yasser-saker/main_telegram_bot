@@ -1,0 +1,10 @@
+{
+  "greeting": [
+    ["hey how are you", "hello", "hey"],
+    ["welcome", "hello", "welcome back"]
+  ],
+  "bye": [
+    ["bye", "goodbye", "see you later"],
+    ["bye", "goodbye", "see you later"]
+  ]
+}

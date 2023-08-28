@@ -1,0 +1,24 @@
+{
+  "ar": {
+    "start": "مرحبا بك في البوت إضغط /help لمشاهدة المساعدة",
+    "unknown": "لا أستطيع فهم رسالتك",
+    "welcome": "مرحبا بك في البوت",
+    "help": "مرحبا بك في البوت\nالأوامر هي:\n/start: بدء البوت\n/help : عرض معلومات البوت\n/end إنهاء البوت\n/ar: تغيير اللغة إلى العربية\n/en: تغيير اللغة إلى الإنجليزية",
+    "end": "نحن آسفون لذلك, نرجو أن تعود قريبا",
+    "no_end": "!أنت غير مسجل بالفعل في البوت",
+    "ar": "لغتك هي اللغة العربية بالفعل",
+    "en": "Your Language Have Been Changed To English",
+    "not_user": "أنت لست عضوا بالفعل , برجاء الإشتراك عبر الضغط على هذا الأمر /start"
+  },
+  "en": {
+    "start": "welcome to the bot , click /help to see the help",
+    "unknown": "I cannot understand your message",
+    "welcome": "welcome to the bot",
+    "help": "welcome to the bot\ncommands are:\n/start: start the bot\n/help: show help of the bot\n/end: end the bot\n/ar: change language to arabic\n/en: change language to english",
+    "end": "We Are Sorry For That, Hope You Back Soon.",
+    "no_end": "You Are Already Not Signed In Bot!",
+    "ar": "لقد تم تغيير لغتك إلى اللغة العربية",
+    "en": "Your Language Is Already English",
+    "not_user": "You Are Not User Already , Please Subscripe By Click /start"
+  }
+}
