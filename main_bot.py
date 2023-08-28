@@ -183,10 +183,11 @@ class DateTime:
 
 
 class Users:
-    def __init__(self, data_file="data.json"):
+    def __init__(self, data_file="data.json", default_lang="ar"):
         self.data_file = data_file
-
+        self.default_lang = default_lang
     # Dealing With Users Data In Database
+
     def deal_data_file(self):
         data = self.reading_data()
         if data == "":
@@ -284,7 +285,10 @@ class Users:
 
     # Get Some Specific Details About User
     def get_lang(self, message):
-        return self.get_user(message)["lang"]
+        try:
+            return self.get_user(message)["lang"]
+        except:
+            return self.default_lang
 
     def change_lang(self, message, new_lang):
         self.edit_info(message, "lang", new_lang)
