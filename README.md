@@ -1,2 +1,3 @@
-# main_telegram_bot
-This Is Main Class To Build Telegram Bot By OOP , It Can Be Used To Build Better Bot About Anything
+# anti_porn_telegram_bot
+
+This Is A Prototype OOP Telegram Bot That You Can Use To Create Your Own Customize Bot
