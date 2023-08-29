@@ -8,6 +8,6 @@ class NewBot(Bot):
         # Continue Your Bot Code Here
 
 
-newbot = NewBot("TYPE YOUR TOKEN HERE..")
+newbot = NewBot("Enter Your Token Here")
 print('Bot Started..')
 newbot.bot.infinity_polling()

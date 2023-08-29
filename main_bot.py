@@ -78,10 +78,10 @@ class Dealing(ReadingWriting):
         data_random = self.reading_texting_random()
         data_static = self.reading_texting_static()
         for category in data_random:
-            if (message in data_random[category][0]):
+            if message.text in data_random[category][0]:
                 return choice(data_random[category][1])
-        if message in data_static:
-            return data_static[message]
+        if message.text in data_static:
+            return data_static[message.text]
         else:
             return self.deal_commands("unknown", lang)
 
@@ -350,3 +350,13 @@ class Bot(MainBot, Dealing, Users, DateTime, MessageInfo, ReadingWriting):
             else:
                 self.bot.send_message(message.chat.id, self.deal_commands(
                     "end", self.default_lang))
+
+        # handle the normal messages
+        @self.bot.message_handler(func=lambda m: True)
+        def reply(message):
+            if self.check_user_exists(message):
+                self.bot.send_message(message.chat.id, self.deal_messages(
+                    message, self.get_lang(message)))
+            else:
+                self.bot.send_message(message.chat.id, self.deal_commands(
+                    "not_user", self.get_lang(message)))
